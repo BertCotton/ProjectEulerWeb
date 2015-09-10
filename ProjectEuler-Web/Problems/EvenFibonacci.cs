@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace ProjectEuler_Web.Problems
+namespace ProjectEulerWeb.Problems
 {
     class EvenFibonacci
     {

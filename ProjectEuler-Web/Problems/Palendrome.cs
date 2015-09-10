@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProjectEuler_Web.Problems
+namespace ProjectEulerWeb.Problems
 {
     public class Palendrome
     {

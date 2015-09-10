@@ -1,4 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="ProjectEuler_Web.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="ProjectEulerWeb.Index" %>
+
+<%@ Register TagPrefix="problems" TagName="SmallestMultipleView" Src="~/ProblemViews/SmallestMultipleView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="LargestPalendrom" Src="~/ProblemViews/LargestPalendromeView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="LargestPrimeFactor" Src="~/ProblemViews/LargestPrimeFactor.ascx" %>
+<%@ Register TagPrefix="problems" TagName="EvenFibonacci" Src="~/ProblemViews/EvenFibonacci.ascx" %>
+<%@ Register TagPrefix="problems" TagName="MultiplesOf3and5" Src="~/ProblemViews/MultiplesOf3and5.ascx" %>
+<%@ Register TagPrefix="problems" TagName="SumSquareDifference" Src="~/ProblemViews/SumSquareDifferenceView.ascx" %>
+
 
 <!DOCTYPE html>
 
@@ -30,70 +38,12 @@
         </div>
 
         <div class="container">
-            <div class="col-md-4 well">
-                <h2>1. Multiples of 3 and 5</h2>
-                <div class="row">
-                    <label for="multiplesOf3And5Input">Upper bound</label>
-                    <asp:TextBox ID="multiplesOf3And5Input" runat="server" Text="10"></asp:TextBox>
-                    <asp:Button OnClick="MultiplesOf3And5Click" runat="server" Text="Go" />
-                </div>
-                <% if (multiplesOf3And5Response.Text != null && multiplesOf3And5Response.Text.Length > 0)
-                    { %>
-                <div class="row" id="multiplesOf3And5ResponseRow">
-                    <label for="multiplesOf3And5Response">Reponse</label>
-                    <asp:Label ID="multiplesOf3And5Response" runat="server"></asp:Label>
-                </div>
-                <% } %>
-            </div>
-            <div class="col-md-4 well">
-                <h2>2. Even Fibonacci</h2>
-                <div class="row">
-                    <label for="EvenFibonacciInput">Upper bound</label>
-                    <asp:TextBox ID="EvenFibonacciInput" runat="server" Text="10"></asp:TextBox>
-                    <asp:Button OnClick="EvenFibonacciClick" runat="server" Text="Go" />
-                </div>
-                <% if (EvenFibonacciResponse.Text != null && EvenFibonacciResponse.Text.Length > 0)
-                    { %>
-                <div class="row">
-                    <label for="EvenFibonacciResponse">Reponse</label>
-                    <asp:Label ID="EvenFibonacciResponse" runat="server"></asp:Label>
-                </div>
-                <% } %>
-            </div>
-            <div class="col-md-4 well">
-                <h2>3. Largest Prime Factor</h2>
-                <div class="row">
-                    <label for="LargestPrimeFactorInput">Upper bound</label>
-                    <asp:TextBox ID="LargestPrimeFactorInput" runat="server" Text="10"></asp:TextBox>
-                    <asp:Button OnClick="LargestPrimeFactorClick" runat="server" Text="Go" />
-                </div>
-                <% if (LargestPrimeFactorResponse.Text != null && LargestPrimeFactorResponse.Text.Length > 0)
-                    { %>
-                <div class="row">
-                    <label for="LargestPrimeFactorResponse">Reponse</label>
-                    <asp:Label ID="LargestPrimeFactorResponse" runat="server"></asp:Label>
-                    in 
-                        <asp:Label ID="LargestPrimeFactorResponseTime" runat="server"></asp:Label>ms
-                </div>
-                <% } %>
-            </div>
-            <div class="col-md-4 well">
-                <h2>4. Largest Palendrome</h2>
-                <div class="row">
-                    <label for="LargestPalendromeInput">Upper bound</label>
-                    <asp:TextBox ID="LargestPalendromeInput" runat="server" Text="10"></asp:TextBox>
-                    <asp:Button OnClick="LargestPalendromeClick" runat="server" Text="Go" />
-                </div>
-                <% if (LargestPalendromeResponse.Text != null && LargestPalendromeResponse.Text.Length > 0)
-                    { %>
-                <div class="row">
-                    <label for="LargestPalendromeResponse">Reponse</label>
-                    <asp:Label ID="LargestPalendromeResponse" runat="server"></asp:Label>
-                    in 
-                        <asp:Label ID="LargestPalendromeResponseTime" runat="server"></asp:Label>ms
-                </div>
-                <% } %>
-            </div>
+            <problems:MultiplesOf3and5 runat="server" />
+            <problems:EvenFibonacci runat="server" />
+            <problems:LargestPrimeFactor runat="server" />
+            <problems:LargestPalendrom runat="server" />
+            <problems:SmallestMultipleView runat="server" />
+            <problems:SumSquareDifference runat="server" />
         </div>
     </form>
 </body>

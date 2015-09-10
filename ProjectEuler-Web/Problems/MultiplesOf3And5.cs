@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
-namespace ProjectEuler_Web.Problems
+namespace ProjectEulerWeb.Problems
 {
     public class MultiplesOf3And5
     {

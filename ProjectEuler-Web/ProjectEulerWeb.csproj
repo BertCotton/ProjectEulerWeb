@@ -11,15 +11,16 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectEuler_Web</RootNamespace>
-    <AssemblyName>ProjectEuler-Web</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>ProjectEulerWeb</RootNamespace>
+    <AssemblyName>ProjectEulerWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +30,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,28 +39,34 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
+    <Content Include="ProblemViews\EvenFibonacci.ascx" />
+    <Content Include="ProblemViews\LargestPalendromeView.ascx" />
+    <Content Include="ProblemViews\LargestPrimeFactor.ascx" />
+    <Content Include="ProblemViews\MultiplesOf3and5.ascx" />
+    <Content Include="ProblemViews\SmallestMultipleView.ascx" />
+    <Content Include="ProblemViews\SumSquareDifferenceView.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +81,50 @@
     <Compile Include="Problems\LargestPrimeFactor.cs" />
     <Compile Include="Problems\MultiplesOf3And5.cs" />
     <Compile Include="Problems\Palendrome.cs" />
+    <Compile Include="Problems\SmallestMultiple.cs" />
+    <Compile Include="Problems\SumSquareDifference.cs" />
+    <Compile Include="ProblemViews\EvenFibonacci.ascx.cs">
+      <DependentUpon>EvenFibonacci.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\EvenFibonacci.ascx.designer.cs">
+      <DependentUpon>EvenFibonacci.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\LargestPalendromeView.ascx.cs">
+      <DependentUpon>LargestPalendromeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\LargestPalendromeView.ascx.designer.cs">
+      <DependentUpon>LargestPalendromeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\LargestPrimeFactor.ascx.cs">
+      <DependentUpon>LargestPrimeFactor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\LargestPrimeFactor.ascx.designer.cs">
+      <DependentUpon>LargestPrimeFactor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\MultiplesOf3and5.ascx.cs">
+      <DependentUpon>MultiplesOf3and5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\MultiplesOf3and5.ascx.designer.cs">
+      <DependentUpon>MultiplesOf3and5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\SmallestMultipleView.ascx.cs">
+      <DependentUpon>SmallestMultipleView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\SmallestMultipleView.ascx.designer.cs">
+      <DependentUpon>SmallestMultipleView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\SumSquareDifferenceView.ascx.cs">
+      <DependentUpon>SumSquareDifferenceView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\SumSquareDifferenceView.ascx.designer.cs">
+      <DependentUpon>SumSquareDifferenceView.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
