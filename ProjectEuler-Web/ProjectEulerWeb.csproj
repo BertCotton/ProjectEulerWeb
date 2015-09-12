@@ -69,6 +69,7 @@
     <Content Include="ProblemViews\NthPrimeView.ascx" />
     <Content Include="ProblemViews\PythagoreanTripletView.ascx" />
     <Content Include="ProblemViews\SmallestMultipleView.ascx" />
+    <Content Include="ProblemViews\SummationOfPrimesView.ascx" />
     <Content Include="ProblemViews\SumSquareDifferenceView.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,6 +89,7 @@
     <Compile Include="Problems\Palendrome.cs" />
     <Compile Include="Problems\PythagoreanTripplet.cs" />
     <Compile Include="Problems\SmallestMultiple.cs" />
+    <Compile Include="Problems\SummationOfPrimes.cs" />
     <Compile Include="Problems\SumSquareDifference.cs" />
     <Compile Include="ProblemViews\EvenFibonacciView.ascx.cs">
       <DependentUpon>EvenFibonacciView.ascx</DependentUpon>
@@ -144,6 +146,13 @@
     </Compile>
     <Compile Include="ProblemViews\SmallestMultipleView.ascx.designer.cs">
       <DependentUpon>SmallestMultipleView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\SummationOfPrimesView.ascx.cs">
+      <DependentUpon>SummationOfPrimesView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\SummationOfPrimesView.ascx.designer.cs">
+      <DependentUpon>SummationOfPrimesView.ascx</DependentUpon>
     </Compile>
     <Compile Include="ProblemViews\SumSquareDifferenceView.ascx.cs">
       <DependentUpon>SumSquareDifferenceView.ascx</DependentUpon>

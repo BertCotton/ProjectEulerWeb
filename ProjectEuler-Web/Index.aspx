@@ -9,6 +9,7 @@
 <%@ Register TagPrefix="problems" TagName="NthPrime" Src="~/ProblemViews/NthPrimeView.ascx" %>
 <%@ Register TagPrefix="problems" TagName="LargestProductInSeries" Src="~/ProblemViews/LargestProductInSeriesView.ascx" %>
 <%@ Register TagPrefix="problems" TagName="PythagoreanTripplet" Src="~/ProblemViews/PythagoreanTripletView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="SummationOfPrimes" Src="~/ProblemViews/SummationOfPrimesView.ascx" %>
 
 
 <!DOCTYPE html>
@@ -50,6 +51,7 @@
             <problems:NthPrime runat="server" />
             <problems:LargestProductInSeries runat="server" />
             <problems:PythagoreanTripplet runat="server" />
+            <problems:SummationOfPrimes runat="server"/>
         </div>
     </form>
 </body>
