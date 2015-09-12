@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EvenFibonacci.ascx.cs" Inherits="ProjectEulerWeb.ProblemViews.EvenFibinacci" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EvenFibonacciView.ascx.cs" Inherits="ProjectEulerWeb.ProblemViews.EvenFibinacci" %>
 
 <div class="col-md-4 well">
     <h2>Even Fibonacci</h2>

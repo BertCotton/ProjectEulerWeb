@@ -1,11 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="ProjectEulerWeb.Index" %>
 
-<%@ Register TagPrefix="problems" TagName="SmallestMultipleView" Src="~/ProblemViews/SmallestMultipleView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="SmallestMultiple" Src="~/ProblemViews/SmallestMultipleView.ascx" %>
 <%@ Register TagPrefix="problems" TagName="LargestPalendrom" Src="~/ProblemViews/LargestPalendromeView.ascx" %>
 <%@ Register TagPrefix="problems" TagName="LargestPrimeFactor" Src="~/ProblemViews/LargestPrimeFactor.ascx" %>
-<%@ Register TagPrefix="problems" TagName="EvenFibonacci" Src="~/ProblemViews/EvenFibonacci.ascx" %>
+<%@ Register TagPrefix="problems" TagName="EvenFibonacci" Src="~/ProblemViews/EvenFibonacciView.ascx" %>
 <%@ Register TagPrefix="problems" TagName="MultiplesOf3and5" Src="~/ProblemViews/MultiplesOf3and5.ascx" %>
 <%@ Register TagPrefix="problems" TagName="SumSquareDifference" Src="~/ProblemViews/SumSquareDifferenceView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="NthPrime" Src="~/ProblemViews/NthPrimeView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="LargestProductInSeries" Src="~/ProblemViews/LargestProductInSeriesView.ascx" %>
+<%@ Register TagPrefix="problems" TagName="PythagoreanTripplet" Src="~/ProblemViews/PythagoreanTripletView.ascx" %>
 
 
 <!DOCTYPE html>
@@ -42,8 +45,11 @@
             <problems:EvenFibonacci runat="server" />
             <problems:LargestPrimeFactor runat="server" />
             <problems:LargestPalendrom runat="server" />
-            <problems:SmallestMultipleView runat="server" />
+            <problems:SmallestMultiple runat="server" />
             <problems:SumSquareDifference runat="server" />
+            <problems:NthPrime runat="server" />
+            <problems:LargestProductInSeries runat="server" />
+            <problems:PythagoreanTripplet runat="server" />
         </div>
     </form>
 </body>

@@ -61,10 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
-    <Content Include="ProblemViews\EvenFibonacci.ascx" />
+    <Content Include="ProblemViews\EvenFibonacciView.ascx" />
     <Content Include="ProblemViews\LargestPalendromeView.ascx" />
     <Content Include="ProblemViews\LargestPrimeFactor.ascx" />
+    <Content Include="ProblemViews\LargestProductInSeriesView.ascx" />
     <Content Include="ProblemViews\MultiplesOf3and5.ascx" />
+    <Content Include="ProblemViews\NthPrimeView.ascx" />
+    <Content Include="ProblemViews\PythagoreanTripletView.ascx" />
     <Content Include="ProblemViews\SmallestMultipleView.ascx" />
     <Content Include="ProblemViews\SumSquareDifferenceView.ascx" />
     <Content Include="Web.config" />
@@ -78,17 +81,20 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Problems\EvenFibonacci.cs" />
+    <Compile Include="Problems\NthPrimes.cs" />
     <Compile Include="Problems\LargestPrimeFactor.cs" />
+    <Compile Include="Problems\LargestProductInSeries.cs" />
     <Compile Include="Problems\MultiplesOf3And5.cs" />
     <Compile Include="Problems\Palendrome.cs" />
+    <Compile Include="Problems\PythagoreanTripplet.cs" />
     <Compile Include="Problems\SmallestMultiple.cs" />
     <Compile Include="Problems\SumSquareDifference.cs" />
-    <Compile Include="ProblemViews\EvenFibonacci.ascx.cs">
-      <DependentUpon>EvenFibonacci.ascx</DependentUpon>
+    <Compile Include="ProblemViews\EvenFibonacciView.ascx.cs">
+      <DependentUpon>EvenFibonacciView.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProblemViews\EvenFibonacci.ascx.designer.cs">
-      <DependentUpon>EvenFibonacci.ascx</DependentUpon>
+    <Compile Include="ProblemViews\EvenFibonacciView.ascx.designer.cs">
+      <DependentUpon>EvenFibonacciView.ascx</DependentUpon>
     </Compile>
     <Compile Include="ProblemViews\LargestPalendromeView.ascx.cs">
       <DependentUpon>LargestPalendromeView.ascx</DependentUpon>
@@ -104,12 +110,33 @@
     <Compile Include="ProblemViews\LargestPrimeFactor.ascx.designer.cs">
       <DependentUpon>LargestPrimeFactor.ascx</DependentUpon>
     </Compile>
+    <Compile Include="ProblemViews\LargestProductInSeriesView.ascx.cs">
+      <DependentUpon>LargestProductInSeriesView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\LargestProductInSeriesView.ascx.designer.cs">
+      <DependentUpon>LargestProductInSeriesView.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ProblemViews\MultiplesOf3and5.ascx.cs">
       <DependentUpon>MultiplesOf3and5.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProblemViews\MultiplesOf3and5.ascx.designer.cs">
       <DependentUpon>MultiplesOf3and5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\NthPrimeView.ascx.cs">
+      <DependentUpon>NthPrimeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\NthPrimeView.ascx.designer.cs">
+      <DependentUpon>NthPrimeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\PythagoreanTripletView.ascx.cs">
+      <DependentUpon>PythagoreanTripletView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\PythagoreanTripletView.ascx.designer.cs">
+      <DependentUpon>PythagoreanTripletView.ascx</DependentUpon>
     </Compile>
     <Compile Include="ProblemViews\SmallestMultipleView.ascx.cs">
       <DependentUpon>SmallestMultipleView.ascx</DependentUpon>
