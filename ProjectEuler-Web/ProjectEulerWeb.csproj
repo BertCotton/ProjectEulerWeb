@@ -64,6 +64,7 @@
     <Content Include="ProblemViews\EvenFibonacciView.ascx" />
     <Content Include="ProblemViews\LargestPalendromeView.ascx" />
     <Content Include="ProblemViews\LargestPrimeFactor.ascx" />
+    <Content Include="ProblemViews\LargestProductGridView.ascx" />
     <Content Include="ProblemViews\LargestProductInSeriesView.ascx" />
     <Content Include="ProblemViews\MultiplesOf3and5.ascx" />
     <Content Include="ProblemViews\NthPrimeView.ascx" />
@@ -82,6 +83,7 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Problems\EvenFibonacci.cs" />
+    <Compile Include="Problems\LargestProductInGrid.cs" />
     <Compile Include="Problems\NthPrimes.cs" />
     <Compile Include="Problems\LargestPrimeFactor.cs" />
     <Compile Include="Problems\LargestProductInSeries.cs" />
@@ -111,6 +113,13 @@
     </Compile>
     <Compile Include="ProblemViews\LargestPrimeFactor.ascx.designer.cs">
       <DependentUpon>LargestPrimeFactor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemViews\LargestProductGridView.ascx.cs">
+      <DependentUpon>LargestProductGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProblemViews\LargestProductGridView.ascx.designer.cs">
+      <DependentUpon>LargestProductGridView.ascx</DependentUpon>
     </Compile>
     <Compile Include="ProblemViews\LargestProductInSeriesView.ascx.cs">
       <DependentUpon>LargestProductInSeriesView.ascx</DependentUpon>
